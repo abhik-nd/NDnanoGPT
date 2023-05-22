@@ -1,0 +1,275 @@
+2023-05-22 23:10:28,015 INFO    StreamThr :16651 [internal.py:wandb_internal():86] W&B internal server running at pid: 16651, started at: 2023-05-22 23:10:28.015526
+2023-05-22 23:10:28,016 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status
+2023-05-22 23:10:28,018 INFO    WriterThread:16651 [datastore.py:open_for_write():85] open: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/run-jop8q76d.wandb
+2023-05-22 23:10:28,019 DEBUG   SenderThread:16651 [sender.py:send():375] send: header
+2023-05-22 23:10:28,060 DEBUG   SenderThread:16651 [sender.py:send():375] send: run
+2023-05-22 23:10:28,155 INFO    SenderThread:16651 [dir_watcher.py:__init__():219] watching files in: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files
+2023-05-22 23:10:28,155 INFO    SenderThread:16651 [sender.py:_start_run_threads():1124] run started: jop8q76d with start time 1684797028.015156
+2023-05-22 23:10:28,155 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 23:10:28,155 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 23:10:28,158 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: check_version
+2023-05-22 23:10:28,159 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: check_version
+2023-05-22 23:10:28,241 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: run_start
+2023-05-22 23:10:28,259 DEBUG   HandlerThread:16651 [system_info.py:__init__():31] System info init
+2023-05-22 23:10:28,259 DEBUG   HandlerThread:16651 [system_info.py:__init__():46] System info init done
+2023-05-22 23:10:28,259 INFO    HandlerThread:16651 [system_monitor.py:start():181] Starting system monitor
+2023-05-22 23:10:28,259 INFO    SystemMonitor:16651 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-22 23:10:28,259 INFO    HandlerThread:16651 [system_monitor.py:probe():201] Collecting system info
+2023-05-22 23:10:28,260 INFO    SystemMonitor:16651 [interfaces.py:start():190] Started cpu monitoring
+2023-05-22 23:10:28,260 INFO    SystemMonitor:16651 [interfaces.py:start():190] Started disk monitoring
+2023-05-22 23:10:28,261 INFO    SystemMonitor:16651 [interfaces.py:start():190] Started gpu monitoring
+2023-05-22 23:10:28,262 INFO    SystemMonitor:16651 [interfaces.py:start():190] Started memory monitoring
+2023-05-22 23:10:28,262 INFO    SystemMonitor:16651 [interfaces.py:start():190] Started network monitoring
+2023-05-22 23:10:28,283 DEBUG   HandlerThread:16651 [system_info.py:probe():195] Probing system
+2023-05-22 23:10:28,288 DEBUG   HandlerThread:16651 [system_info.py:_probe_git():180] Probing git
+2023-05-22 23:10:28,298 DEBUG   HandlerThread:16651 [system_info.py:_probe_git():188] Probing git done
+2023-05-22 23:10:28,298 DEBUG   HandlerThread:16651 [system_info.py:probe():240] Probing system done
+2023-05-22 23:10:28,298 DEBUG   HandlerThread:16651 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-1066-aws-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-05-22T23:10:28.283594', 'startedAt': '2023-05-22T23:10:28.010749', 'docker': None, 'cuda': '11.0.228', 'args': ('config/train_nd_accel.py', '--dtype=float16'), 'state': 'running', 'program': '/home/ubuntu/abhi_workspace/NDnanoGPT/train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/abhik-nd/NDnanoGPT.git', 'commit': 'f026eb83af3f9f30075fb5be6a8ef8e4ae2f72e0'}, 'email': 'michael.laielli@netradyne.com', 'root': '/home/ubuntu/abhi_workspace/NDnanoGPT', 'host': 'ip-10-200-10-3', 'username': 'ubuntu', 'executable': '/home/ubuntu/anaconda3/envs/gpt/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3197.0558749999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3203.295, 'min': 0.0, 'max': 0.0}, {'current': 3167.204, 'min': 0.0, 'max': 0.0}, {'current': 3189.635, 'min': 0.0, 'max': 0.0}, {'current': 3210.599, 'min': 0.0, 'max': 0.0}, {'current': 3196.904, 'min': 0.0, 'max': 0.0}, {'current': 3197.635, 'min': 0.0, 'max': 0.0}, {'current': 3205.642, 'min': 0.0, 'max': 0.0}, {'current': 3200.443, 'min': 0.0, 'max': 0.0}, {'current': 3195.743, 'min': 0.0, 'max': 0.0}, {'current': 3167.07, 'min': 0.0, 'max': 0.0}, {'current': 3205.833, 'min': 0.0, 'max': 0.0}, {'current': 3173.182, 'min': 0.0, 'max': 0.0}, {'current': 3201.683, 'min': 0.0, 'max': 0.0}, {'current': 3216.767, 'min': 0.0, 'max': 0.0}, {'current': 3194.624, 'min': 0.0, 'max': 0.0}, {'current': 3226.635, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 125.96025466918945, 'used': 120.44621276855469}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 62.03021240234375}}
+2023-05-22 23:10:28,298 INFO    HandlerThread:16651 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-22 23:10:28,298 INFO    HandlerThread:16651 [system_monitor.py:probe():214] Publishing system info
+2023-05-22 23:10:28,298 DEBUG   HandlerThread:16651 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-22 23:10:28,299 DEBUG   HandlerThread:16651 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-22 23:10:28,299 DEBUG   HandlerThread:16651 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-22 23:10:29,157 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/conda-environment.yaml
+2023-05-22 23:10:29,157 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/requirements.txt
+2023-05-22 23:10:29,158 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-summary.json
+2023-05-22 23:10:31,999 DEBUG   HandlerThread:16651 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-22 23:10:31,999 DEBUG   HandlerThread:16651 [system_info.py:_save_code():89] Saving code
+2023-05-22 23:10:32,005 DEBUG   HandlerThread:16651 [system_info.py:_save_code():110] Saving code done
+2023-05-22 23:10:32,005 DEBUG   HandlerThread:16651 [system_info.py:_save_patches():127] Saving git patches
+2023-05-22 23:10:32,159 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/conda-environment.yaml
+2023-05-22 23:10:32,159 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/code/train.py
+2023-05-22 23:10:32,159 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/code
+2023-05-22 23:10:33,159 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/diff.patch
+2023-05-22 23:10:34,160 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/diff.patch
+2023-05-22 23:10:34,160 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch
+2023-05-22 23:10:34,890 DEBUG   HandlerThread:16651 [system_info.py:_save_patches():169] Saving git patches done
+2023-05-22 23:10:34,891 INFO    HandlerThread:16651 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-22 23:10:34,893 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:10:34,893 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-22 23:10:34,893 DEBUG   SenderThread:16651 [sender.py:send():375] send: files
+2023-05-22 23:10:34,894 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-22 23:10:34,894 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file code/train.py with policy now
+2023-05-22 23:10:34,894 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-05-22 23:10:34,894 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch with policy now
+2023-05-22 23:10:34,899 DEBUG   SenderThread:16651 [sender.py:send():375] send: telemetry
+2023-05-22 23:10:34,899 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:10:34,902 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:10:35,008 INFO    wandb-upload_0:16651 [upload_job.py:push():137] Uploaded file /tmp/tmp9pwlbqytwandb/lvpnguy9-wandb-metadata.json
+2023-05-22 23:10:35,020 INFO    wandb-upload_1:16651 [upload_job.py:push():137] Uploaded file /tmp/tmp9pwlbqytwandb/zzv57kul-code/train.py
+2023-05-22 23:10:35,081 INFO    wandb-upload_2:16651 [upload_job.py:push():137] Uploaded file /tmp/tmp9pwlbqytwandb/amzanu7q-diff.patch
+2023-05-22 23:10:35,092 INFO    wandb-upload_3:16651 [upload_job.py:push():137] Uploaded file /tmp/tmp9pwlbqytwandb/ub7x9cot-upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch
+2023-05-22 23:10:35,160 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch
+2023-05-22 23:10:35,160 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-metadata.json
+2023-05-22 23:10:38,968 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:10:43,968 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:10:48,969 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:10:50,148 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:10:50,149 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:10:54,168 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:10:59,172 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:00,166 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/config.yaml
+2023-05-22 23:11:04,217 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:05,413 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:11:05,414 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:11:09,433 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:14,434 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:19,434 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:20,425 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:11:20,425 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:11:24,445 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:28,262 DEBUG   SystemMonitor:16651 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-22 23:11:28,263 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:11:30,264 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:35,264 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:35,551 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:11:35,551 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:11:40,570 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:45,571 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:50,571 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:50,855 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:11:50,855 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:11:55,874 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:11:58,264 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:12:01,264 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:06,175 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:12:06,175 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:12:07,194 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:12,195 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:17,195 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:21,502 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:12:21,502 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:12:22,521 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:27,522 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:28,264 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:12:33,265 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:36,883 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:12:36,883 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:12:38,903 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:43,904 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:48,904 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:52,212 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:12:52,212 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:12:54,231 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:12:58,265 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:12:59,265 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:04,266 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:07,531 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:13:07,532 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:13:09,551 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:14,552 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:19,552 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:22,835 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 23:13:22,835 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 23:13:24,854 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:28,265 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:13:30,266 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:30,961 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 23:13:30,963 DEBUG   SenderThread:16651 [sender.py:send():375] send: history
+2023-05-22 23:13:30,963 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 23:13:30,963 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 23:13:31,204 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-summary.json
+2023-05-22 23:13:31,204 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:33,205 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:34,205 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:35,516 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:36,206 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:36,649 DEBUG   SenderThread:16651 [sender.py:send():375] send: exit
+2023-05-22 23:13:36,649 INFO    SenderThread:16651 [sender.py:send_exit():598] handling exit code: 1
+2023-05-22 23:13:36,649 INFO    SenderThread:16651 [sender.py:send_exit():600] handling runtime: 188
+2023-05-22 23:13:36,650 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 23:13:36,650 INFO    SenderThread:16651 [sender.py:send_exit():606] send defer
+2023-05-22 23:13:36,650 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,650 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-22 23:13:36,650 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,650 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-22 23:13:36,650 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 1
+2023-05-22 23:13:36,650 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,650 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-22 23:13:36,651 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,651 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-22 23:13:36,651 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 2
+2023-05-22 23:13:36,651 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,651 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-22 23:13:36,651 INFO    HandlerThread:16651 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-22 23:13:36,651 DEBUG   SystemMonitor:16651 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-22 23:13:36,651 DEBUG   SystemMonitor:16651 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-22 23:13:36,651 INFO    HandlerThread:16651 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-22 23:13:36,652 INFO    HandlerThread:16651 [interfaces.py:finish():202] Joined disk monitor
+2023-05-22 23:13:36,677 INFO    HandlerThread:16651 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-22 23:13:36,677 INFO    HandlerThread:16651 [interfaces.py:finish():202] Joined memory monitor
+2023-05-22 23:13:36,677 INFO    HandlerThread:16651 [interfaces.py:finish():202] Joined network monitor
+2023-05-22 23:13:36,677 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,677 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-22 23:13:36,677 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 3
+2023-05-22 23:13:36,677 DEBUG   SenderThread:16651 [sender.py:send():375] send: stats
+2023-05-22 23:13:36,678 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,678 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-22 23:13:36,678 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,678 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-22 23:13:36,678 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 4
+2023-05-22 23:13:36,678 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,678 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-22 23:13:36,678 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,678 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-22 23:13:36,678 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 5
+2023-05-22 23:13:36,678 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,678 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-22 23:13:36,679 DEBUG   SenderThread:16651 [sender.py:send():375] send: summary
+2023-05-22 23:13:36,679 INFO    SenderThread:16651 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 23:13:36,679 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,679 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-22 23:13:36,679 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 6
+2023-05-22 23:13:36,679 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,679 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-22 23:13:36,679 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,679 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-22 23:13:36,679 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 7
+2023-05-22 23:13:36,680 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 23:13:36,680 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:36,680 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-22 23:13:36,680 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:36,680 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-22 23:13:37,206 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-summary.json
+2023-05-22 23:13:37,649 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 23:13:37,867 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 8
+2023-05-22 23:13:37,868 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 23:13:37,868 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:37,868 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-22 23:13:37,868 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:37,868 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-22 23:13:37,874 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 9
+2023-05-22 23:13:37,874 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:37,874 DEBUG   SenderThread:16651 [sender.py:send():375] send: artifact
+2023-05-22 23:13:37,874 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-22 23:13:38,206 INFO    Thread-12 :16651 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:38,217 INFO    wandb-upload_2:16651 [upload_job.py:push():92] Skipped uploading /home/ubuntu/.local/share/wandb/artifacts/staging/tmpmv_42h04
+2023-05-22 23:13:38,217 INFO    wandb-upload_1:16651 [upload_job.py:push():92] Skipped uploading /home/ubuntu/.local/share/wandb/artifacts/staging/tmpr5qzymyk
+2023-05-22 23:13:38,482 INFO    wandb-upload_0:16651 [upload_job.py:push():95] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpytwslp4u
+2023-05-22 23:13:38,650 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 23:13:38,806 INFO    SenderThread:16651 [sender.py:send_artifact():1474] sent artifact job-https___github.com_abhik-nd_NDnanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6MTE1ODg=', 'digest': '75af607b41d99e2d5f9d5d7dcea31e71', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY5MDA=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE1ODc=', 'versionIndex': 1}}, 'version': 'latest'}
+2023-05-22 23:13:38,806 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:38,806 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-22 23:13:38,806 INFO    SenderThread:16651 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-22 23:13:39,207 INFO    SenderThread:16651 [dir_watcher.py:finish():395] scan: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files
+2023-05-22 23:13:39,207 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-metadata.json wandb-metadata.json
+2023-05-22 23:13:39,207 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/config.yaml config.yaml
+2023-05-22 23:13:39,207 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-summary.json wandb-summary.json
+2023-05-22 23:13:39,207 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log output.log
+2023-05-22 23:13:39,209 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch upstream_diff_7fe4a099ad2a4654f96a51c0736ecf347149c34c.patch
+2023-05-22 23:13:39,209 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/requirements.txt requirements.txt
+2023-05-22 23:13:39,212 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/diff.patch diff.patch
+2023-05-22 23:13:39,212 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/conda-environment.yaml conda-environment.yaml
+2023-05-22 23:13:39,219 INFO    SenderThread:16651 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/code/train.py code/train.py
+2023-05-22 23:13:39,220 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 10
+2023-05-22 23:13:39,220 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 23:13:39,220 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:39,220 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-22 23:13:39,220 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:39,220 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-22 23:13:39,220 INFO    SenderThread:16651 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-22 23:13:39,267 INFO    wandb-upload_3:16651 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/config.yaml
+2023-05-22 23:13:39,287 INFO    wandb-upload_2:16651 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/wandb-summary.json
+2023-05-22 23:13:39,334 INFO    wandb-upload_4:16651 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/requirements.txt
+2023-05-22 23:13:39,339 INFO    wandb-upload_1:16651 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/conda-environment.yaml
+2023-05-22 23:13:39,340 INFO    wandb-upload_0:16651 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/files/output.log
+2023-05-22 23:13:39,540 INFO    Thread-11 :16651 [sender.py:transition_state():626] send defer: 11
+2023-05-22 23:13:39,541 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:39,541 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-22 23:13:39,541 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:39,541 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-22 23:13:39,541 INFO    SenderThread:16651 [file_pusher.py:join():172] waiting for file pusher
+2023-05-22 23:13:39,541 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 12
+2023-05-22 23:13:39,541 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:39,541 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-22 23:13:39,542 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:39,542 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-22 23:13:39,567 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 13
+2023-05-22 23:13:39,567 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:39,567 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-22 23:13:39,567 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:39,567 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-22 23:13:39,567 INFO    SenderThread:16651 [sender.py:transition_state():626] send defer: 14
+2023-05-22 23:13:39,568 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 23:13:39,568 INFO    HandlerThread:16651 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-22 23:13:39,568 DEBUG   SenderThread:16651 [sender.py:send():375] send: final
+2023-05-22 23:13:39,568 DEBUG   SenderThread:16651 [sender.py:send():375] send: footer
+2023-05-22 23:13:39,568 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: defer
+2023-05-22 23:13:39,568 INFO    SenderThread:16651 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-22 23:13:39,568 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 23:13:39,569 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 23:13:39,569 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 23:13:39,569 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 23:13:39,569 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: server_info
+2023-05-22 23:13:39,570 DEBUG   SenderThread:16651 [sender.py:send_request():402] send_request: server_info
+2023-05-22 23:13:39,571 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-22 23:13:39,572 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-22 23:13:39,582 INFO    MainThread:16651 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-22 23:13:39,583 INFO    MainThread:16651 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-22 23:13:39,583 INFO    MainThread:16651 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-05-22 23:13:39,583 DEBUG   HandlerThread:16651 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-22 23:13:39,583 INFO    HandlerThread:16651 [handler.py:finish():845] shutting down handler
+2023-05-22 23:13:40,570 INFO    WriterThread:16651 [datastore.py:close():298] close: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/run-jop8q76d.wandb
+2023-05-22 23:13:40,582 INFO    SenderThread:16651 [sender.py:finish():1550] shutting down sender
+2023-05-22 23:13:40,583 INFO    SenderThread:16651 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-22 23:13:40,583 INFO    SenderThread:16651 [file_pusher.py:join():172] waiting for file pusher

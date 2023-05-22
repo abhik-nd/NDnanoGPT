@@ -1,0 +1,28 @@
+2023-05-22 23:10:28,011 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Configure stats pid to 16607
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/settings
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/home/ubuntu/abhi_workspace/NDnanoGPT/train.py'}
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:_log_setup():507] Logging user logs to /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/logs/debug.log
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:_log_setup():508] Logging internal logs to /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_231028-jop8q76d/logs/debug-internal.log
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:init():547] calling init triggers
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out-nd-accel', 'eval_interval': 250, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'nd-accel', 'wandb_run_name': 'mini-gpt-2', 'dataset': 'nd_accel', 'gradient_accumulation_steps': 1, 'batch_size': 32, 'block_size': 4096, 'n_layer': 6, 'n_head': 6, 'n_embd': 384, 'dropout': 0.2, 'bias': False, 'learning_rate': 0.0001, 'max_iters': 5000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.99, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 100, 'lr_decay_iters': 5000, 'min_lr': 0.0001, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'float16', 'compile': True}
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:init():596] starting backend
+2023-05-22 23:10:28,012 INFO    MainThread:16607 [wandb_init.py:init():600] setting up manager
+2023-05-22 23:10:28,013 INFO    MainThread:16607 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-22 23:10:28,014 INFO    MainThread:16607 [wandb_init.py:init():606] backend started and connected
+2023-05-22 23:10:28,017 INFO    MainThread:16607 [wandb_init.py:init():700] updated telemetry
+2023-05-22 23:10:28,059 INFO    MainThread:16607 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-22 23:10:28,158 INFO    MainThread:16607 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-22 23:10:28,196 INFO    MainThread:16607 [wandb_run.py:_on_init():2186] got version response upgrade_message: "wandb version 0.15.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-05-22 23:10:28,197 INFO    MainThread:16607 [wandb_init.py:init():787] starting run threads in backend
+2023-05-22 23:10:34,898 INFO    MainThread:16607 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-22 23:10:34,898 INFO    MainThread:16607 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-05-22 23:10:34,898 INFO    MainThread:16607 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-05-22 23:10:34,898 INFO    MainThread:16607 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-05-22 23:10:34,899 INFO    MainThread:16607 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-22 23:13:40,651 WARNING MsgRouterThr:16607 [router.py:message_loop():77] message_loop has been closed

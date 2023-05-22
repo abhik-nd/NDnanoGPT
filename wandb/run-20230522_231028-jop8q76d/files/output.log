@@ -1,0 +1,56 @@
+
+step 0: train loss 3.2357, val loss 3.2385
+[2023-05-22 23:13:31,851] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:32,431] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:33,215] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:33,499] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:33,931] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:34,216] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:34,651] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:34,935] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:35,515] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:35,800] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:36,234] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:13:36,519] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+Traceback (most recent call last):
+  File "/home/ubuntu/abhi_workspace/NDnanoGPT/train.py", line 295, in <module>
+    logits, loss = model(X, Y)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 82, in forward
+    return self.dynamo_ctx(self._orig_mod.forward)(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 209, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/abhi_workspace/NDnanoGPT/model.py", line 188, in forward
+    x = block(x)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/abhi_workspace/NDnanoGPT/model.py", line 111, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "/home/ubuntu/abhi_workspace/NDnanoGPT/model.py", line 111, in <graph break in forward>
+    x = x + self.attn(self.ln_1(x))
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 209, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 2836, in forward
+    return compiled_fn(full_args)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 1224, in g
+    return f(*args)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 2403, in debug_compiled_function
+    return compiled_function(*args)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 1900, in runtime_wrapper
+    all_outs = call_func_with_args(
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 1249, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 1224, in g
+    return f(*args)
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 2168, in forward
+    fw_outs = call_func_with_args(
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_functorch/aot_autograd.py", line 1249, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ubuntu/anaconda3/envs/gpt/lib/python3.9/site-packages/torch/_inductor/compile_fx.py", line 248, in run
+    return model(new_inputs)
+  File "/tmp/torchinductor_ubuntu/az/cazgjfopmonjosw2au32jbhkeqxl6pq3n3kpriil34k3h56rcfh7.py", line 214, in call
+    buf8 = empty_strided((32, 4096, 1536), (6291456, 1536, 1), device='cuda', dtype=torch.float32)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB (GPU 0; 14.56 GiB total capacity; 13.47 GiB already allocated; 294.50 MiB free; 13.60 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

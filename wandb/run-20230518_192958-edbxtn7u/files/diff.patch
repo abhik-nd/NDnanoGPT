@@ -1,0 +1,26 @@
+diff --git a/config/train_shakespeare_char.py b/config/train_shakespeare_char.py
+index 41c81df..8be79b6 100644
+--- a/config/train_shakespeare_char.py
++++ b/config/train_shakespeare_char.py
+@@ -9,7 +9,7 @@ log_interval = 10 # don't print too too often
+ # we expect to overfit on this small dataset, so only save when val improves
+ always_save_checkpoint = False
+ 
+-wandb_log = False # override via command line if you like
++wandb_log = True # override via command line if you like
+ wandb_project = 'shakespeare-char'
+ wandb_run_name = 'mini-gpt'
+ 
+diff --git a/sample.py b/sample.py
+index 670759b..65a5888 100644
+--- a/sample.py
++++ b/sample.py
+@@ -11,7 +11,7 @@ from model import GPTConfig, GPT
+ # -----------------------------------------------------------------------------
+ init_from = 'resume' # either 'resume' (from an out_dir) or a gpt2 variant (e.g. 'gpt2-xl')
+ out_dir = 'out' # ignored if init_from is not 'resume'
+-start = "\n" # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE:prompt.txt"
++start = "FILE:data/nd_small/prompt.txt" #"{"#"\n" # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE:prompt.txt"
+ num_samples = 10 # number of samples to draw
+ max_new_tokens = 500 # number of tokens generated in each sample
+ temperature = 0.8 # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions

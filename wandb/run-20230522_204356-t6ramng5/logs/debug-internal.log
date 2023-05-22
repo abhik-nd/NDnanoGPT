@@ -1,0 +1,901 @@
+2023-05-22 20:43:56,605 INFO    StreamThr :6501 [internal.py:wandb_internal():86] W&B internal server running at pid: 6501, started at: 2023-05-22 20:43:56.605338
+2023-05-22 20:43:56,606 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status
+2023-05-22 20:43:56,608 INFO    WriterThread:6501 [datastore.py:open_for_write():85] open: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/run-t6ramng5.wandb
+2023-05-22 20:43:56,610 DEBUG   SenderThread:6501 [sender.py:send():375] send: header
+2023-05-22 20:43:56,652 DEBUG   SenderThread:6501 [sender.py:send():375] send: run
+2023-05-22 20:43:56,806 INFO    SenderThread:6501 [dir_watcher.py:__init__():219] watching files in: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files
+2023-05-22 20:43:56,806 INFO    SenderThread:6501 [sender.py:_start_run_threads():1124] run started: t6ramng5 with start time 1684788236.604932
+2023-05-22 20:43:56,807 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:43:56,807 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:43:56,809 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: check_version
+2023-05-22 20:43:56,809 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: check_version
+2023-05-22 20:43:56,893 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: run_start
+2023-05-22 20:43:56,943 DEBUG   HandlerThread:6501 [system_info.py:__init__():31] System info init
+2023-05-22 20:43:56,943 DEBUG   HandlerThread:6501 [system_info.py:__init__():46] System info init done
+2023-05-22 20:43:56,943 INFO    HandlerThread:6501 [system_monitor.py:start():181] Starting system monitor
+2023-05-22 20:43:56,943 INFO    SystemMonitor:6501 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-22 20:43:56,943 INFO    HandlerThread:6501 [system_monitor.py:probe():201] Collecting system info
+2023-05-22 20:43:56,944 INFO    SystemMonitor:6501 [interfaces.py:start():190] Started cpu monitoring
+2023-05-22 20:43:56,944 INFO    SystemMonitor:6501 [interfaces.py:start():190] Started disk monitoring
+2023-05-22 20:43:56,945 INFO    SystemMonitor:6501 [interfaces.py:start():190] Started gpu monitoring
+2023-05-22 20:43:56,946 INFO    SystemMonitor:6501 [interfaces.py:start():190] Started memory monitoring
+2023-05-22 20:43:56,947 INFO    SystemMonitor:6501 [interfaces.py:start():190] Started network monitoring
+2023-05-22 20:43:56,967 DEBUG   HandlerThread:6501 [system_info.py:probe():195] Probing system
+2023-05-22 20:43:56,972 DEBUG   HandlerThread:6501 [system_info.py:_probe_git():180] Probing git
+2023-05-22 20:43:56,982 DEBUG   HandlerThread:6501 [system_info.py:_probe_git():188] Probing git done
+2023-05-22 20:43:56,982 DEBUG   HandlerThread:6501 [system_info.py:probe():240] Probing system done
+2023-05-22 20:43:56,982 DEBUG   HandlerThread:6501 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-1066-aws-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-05-22T20:43:56.967607', 'startedAt': '2023-05-22T20:43:56.599749', 'docker': None, 'cuda': '11.0.228', 'args': ('config/train_nd_accel.py', '--dtype=float16'), 'state': 'running', 'program': '/home/ubuntu/abhi_workspace/NDnanoGPT/train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/abhik-nd/NDnanoGPT.git', 'commit': '7fe4a099ad2a4654f96a51c0736ecf347149c34c'}, 'email': 'michael.laielli@netradyne.com', 'root': '/home/ubuntu/abhi_workspace/NDnanoGPT', 'host': 'ip-10-200-10-3', 'username': 'ubuntu', 'executable': '/home/ubuntu/anaconda3/envs/gpt/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3109.805125, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3124.581, 'min': 0.0, 'max': 0.0}, {'current': 3100.135, 'min': 0.0, 'max': 0.0}, {'current': 3102.773, 'min': 0.0, 'max': 0.0}, {'current': 3101.143, 'min': 0.0, 'max': 0.0}, {'current': 3101.049, 'min': 0.0, 'max': 0.0}, {'current': 3143.701, 'min': 0.0, 'max': 0.0}, {'current': 3103.054, 'min': 0.0, 'max': 0.0}, {'current': 3105.407, 'min': 0.0, 'max': 0.0}, {'current': 3100.528, 'min': 0.0, 'max': 0.0}, {'current': 3101.808, 'min': 0.0, 'max': 0.0}, {'current': 3099.358, 'min': 0.0, 'max': 0.0}, {'current': 3105.905, 'min': 0.0, 'max': 0.0}, {'current': 3102.881, 'min': 0.0, 'max': 0.0}, {'current': 3101.273, 'min': 0.0, 'max': 0.0}, {'current': 3118.547, 'min': 0.0, 'max': 0.0}, {'current': 3144.739, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 125.96025466918945, 'used': 119.774658203125}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 62.03021240234375}}
+2023-05-22 20:43:56,982 INFO    HandlerThread:6501 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-22 20:43:56,982 INFO    HandlerThread:6501 [system_monitor.py:probe():214] Publishing system info
+2023-05-22 20:43:56,983 DEBUG   HandlerThread:6501 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-22 20:43:56,983 DEBUG   HandlerThread:6501 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-22 20:43:56,983 DEBUG   HandlerThread:6501 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-22 20:43:57,808 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/conda-environment.yaml
+2023-05-22 20:43:57,809 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:43:57,809 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/requirements.txt
+2023-05-22 20:44:01,300 DEBUG   HandlerThread:6501 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-22 20:44:01,300 DEBUG   HandlerThread:6501 [system_info.py:_save_code():89] Saving code
+2023-05-22 20:44:01,306 DEBUG   HandlerThread:6501 [system_info.py:_save_code():110] Saving code done
+2023-05-22 20:44:01,307 DEBUG   HandlerThread:6501 [system_info.py:_save_patches():127] Saving git patches
+2023-05-22 20:44:01,339 DEBUG   HandlerThread:6501 [system_info.py:_save_patches():169] Saving git patches done
+2023-05-22 20:44:01,340 INFO    HandlerThread:6501 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-22 20:44:01,345 DEBUG   SenderThread:6501 [sender.py:send():375] send: files
+2023-05-22 20:44:01,345 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-22 20:44:01,346 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file code/train.py with policy now
+2023-05-22 20:44:01,346 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-05-22 20:44:01,353 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:44:01,353 DEBUG   SenderThread:6501 [sender.py:send():375] send: telemetry
+2023-05-22 20:44:01,354 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:44:01,521 INFO    wandb-upload_2:6501 [upload_job.py:push():137] Uploaded file /tmp/tmpd36ok1q8wandb/dcg15ijs-diff.patch
+2023-05-22 20:44:01,521 INFO    wandb-upload_0:6501 [upload_job.py:push():137] Uploaded file /tmp/tmpd36ok1q8wandb/10cmazr7-wandb-metadata.json
+2023-05-22 20:44:01,550 INFO    wandb-upload_1:6501 [upload_job.py:push():137] Uploaded file /tmp/tmpd36ok1q8wandb/z5b2s9gl-code/train.py
+2023-05-22 20:44:01,810 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/conda-environment.yaml
+2023-05-22 20:44:01,810 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/diff.patch
+2023-05-22 20:44:01,810 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/code/train.py
+2023-05-22 20:44:01,810 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-metadata.json
+2023-05-22 20:44:01,810 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/code
+2023-05-22 20:44:02,405 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:07,406 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:12,406 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:16,356 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:44:16,356 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:44:16,556 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:44:16,558 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:44:16,558 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:44:16,559 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:44:16,814 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:44:16,814 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_created():278] file/dir created: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:17,814 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:18,815 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:19,815 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:21,816 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:23,014 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:23,817 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:24,817 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:26,818 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:28,036 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:28,818 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/config.yaml
+2023-05-22 20:44:28,819 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:30,819 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:31,354 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:44:31,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:44:32,820 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:33,530 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:34,820 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:36,821 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:38,822 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:39,060 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:40,822 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:42,823 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:44,615 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:44,824 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:46,354 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:44:46,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:44:46,824 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:48,825 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:50,189 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:50,826 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:44:55,306 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:44:56,947 DEBUG   SystemMonitor:6501 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-22 20:44:56,948 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:45:00,949 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:01,355 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:45:01,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:45:05,016 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:45:05,016 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:45:05,017 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:45:05,018 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:45:05,830 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:45:06,294 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:06,831 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:08,831 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:10,832 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:11,892 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:12,833 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:14,833 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:16,355 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:45:16,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:45:16,834 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:17,478 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:18,835 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:20,835 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:22,836 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:23,108 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:24,837 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:26,837 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:26,949 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:45:28,777 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:28,838 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:30,839 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:31,354 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:45:31,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:45:32,839 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:34,366 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:39,366 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:44,344 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:45:44,344 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:45:44,345 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:45:44,345 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:45:44,729 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:44,843 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:45:44,843 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:46,355 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:45:46,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:45:46,843 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:48,844 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:50,324 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:50,845 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:52,845 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:54,846 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:56,092 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:45:56,847 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:45:56,950 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:45:58,847 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:00,848 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:01,355 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:46:01,355 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:46:01,375 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:02,849 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:04,849 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:06,512 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:06,850 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:08,851 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:10,851 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:12,306 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:12,852 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:16,361 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:46:16,361 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:46:17,380 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:22,381 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:24,753 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:46:24,755 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:46:24,755 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:46:24,755 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:46:24,855 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:46:24,855 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:26,856 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:26,950 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:46:27,430 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:28,856 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:30,857 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:31,360 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:46:31,360 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:46:32,858 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:33,108 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:34,858 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:36,859 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:38,860 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:38,948 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:40,860 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:42,861 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:44,791 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:44,861 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:46,361 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:46:46,361 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:46:46,862 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:48,863 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:50,651 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:50,863 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:52,864 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:54,865 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:46:56,177 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:46:56,951 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:47:01,377 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:47:01,378 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:47:01,399 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:05,665 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:47:05,667 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:47:05,667 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:47:05,668 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:47:05,868 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:47:06,868 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:07,009 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:08,869 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:10,869 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:12,870 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:12,916 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:14,870 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:16,377 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:47:16,377 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:47:16,871 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:18,823 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:18,872 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:20,872 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:22,873 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:24,746 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:24,874 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:26,874 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:26,952 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:47:28,875 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:30,659 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:30,876 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:31,377 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:47:31,377 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:47:32,876 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:34,877 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:36,417 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:41,417 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:46,389 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:47:46,389 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:47:47,056 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:47,097 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:47:47,098 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:47:47,099 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:47:47,099 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:47:47,881 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:47:48,881 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:50,882 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:52,200 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:52,882 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:54,883 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:56,883 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:47:56,952 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:47:57,953 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:47:58,884 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:00,885 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:01,389 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:48:01,389 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:48:02,885 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:03,868 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:04,886 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:06,887 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:08,887 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:09,790 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:10,888 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:12,888 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:14,889 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:15,687 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:16,388 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:48:16,389 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:48:16,890 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:21,408 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:26,409 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:26,953 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:48:28,302 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:48:28,303 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:48:28,303 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:48:28,303 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:48:28,893 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:48:28,893 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:30,893 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:31,389 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:48:31,389 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:48:32,206 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:32,894 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:34,895 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:36,896 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:37,904 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:39,897 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:41,898 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:43,753 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:43,898 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:45,899 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:46,389 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:48:46,390 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:48:47,900 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:49,611 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:49,900 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:51,901 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:53,902 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:55,452 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:48:55,902 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:48:56,953 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:48:57,903 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:00,954 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:01,401 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:49:01,401 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:49:06,420 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:09,174 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:49:09,175 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:49:09,175 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:49:09,176 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:49:09,906 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:49:11,737 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:11,907 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:13,907 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:15,908 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:16,400 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:49:16,400 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:49:17,638 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:17,909 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:19,909 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:21,910 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:23,474 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:23,910 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:25,911 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:26,954 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:49:27,912 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:29,359 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:29,912 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:31,400 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:49:31,400 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:49:31,913 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:33,914 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:35,256 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:35,914 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:37,915 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:39,915 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:40,796 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:45,796 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:46,416 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:49:46,416 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:49:50,364 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:49:50,365 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:49:50,365 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:49:50,367 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:49:50,918 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:49:51,744 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:51,919 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:53,919 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:55,920 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:56,955 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:49:56,956 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:49:57,920 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:49:59,921 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:01,414 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:50:01,415 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:50:01,922 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:02,502 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:03,922 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:05,923 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:07,924 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:08,399 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:09,924 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:11,925 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:13,925 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:14,327 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:15,926 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:16,414 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:50:16,415 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:50:17,927 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:19,927 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:20,249 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:21,928 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:25,250 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:26,956 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:50:30,956 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:31,432 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:50:31,432 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:50:31,834 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:50:31,835 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:50:31,835 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:50:31,836 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:50:31,931 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:50:33,932 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:35,932 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:36,776 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:37,933 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:39,933 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:41,934 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:42,703 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:43,935 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:45,935 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:46,441 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:50:46,441 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:50:47,936 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:48,666 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:49,936 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:51,937 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:53,938 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:54,557 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:50:55,938 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:56,956 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:50:57,939 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:50:59,940 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:00,482 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:01,440 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:51:01,441 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:51:01,940 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:06,460 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:11,461 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:13,251 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:51:13,252 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:51:13,252 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:51:13,252 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:51:13,943 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:51:15,944 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:16,440 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:51:16,441 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:51:17,248 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:17,945 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:19,945 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:21,946 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:22,992 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:23,947 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:25,947 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:26,956 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:51:27,948 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:28,909 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:29,948 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:31,440 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:51:31,441 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:51:31,949 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:33,950 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:34,832 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:35,950 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:37,951 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:39,952 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:40,759 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:41,952 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:43,953 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:46,124 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:46,464 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:51:46,464 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:51:51,483 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:54,696 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:51:54,696 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:51:54,697 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:51:54,699 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:51:54,956 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:51:55,956 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:56,957 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:51:56,958 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:51:57,957 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:51:59,957 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:01,463 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:52:01,463 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:52:01,958 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:02,193 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:03,959 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:05,959 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:07,935 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:07,960 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:09,961 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:11,961 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:13,863 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:13,962 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:15,963 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:16,463 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:52:16,463 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:52:17,963 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:19,782 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:19,964 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:21,965 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:23,965 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:25,514 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:25,966 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:26,958 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:52:30,959 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:31,465 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:52:31,466 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:52:36,095 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:36,095 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:52:36,096 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:52:36,097 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:52:36,097 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:52:36,969 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:52:37,969 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:39,970 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:41,226 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:41,970 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:43,971 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:45,972 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:46,464 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:52:46,465 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:52:46,483 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:47,972 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:49,973 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:51,698 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:51,974 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:53,974 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:55,975 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:56,958 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:52:56,959 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:52:57,975 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:52:59,976 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:01,465 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:53:01,466 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:53:01,977 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:02,484 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:03,977 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:05,978 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:07,898 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:12,899 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:16,470 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:53:16,471 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:53:17,447 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:53:17,448 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:53:17,448 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:53:17,448 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:53:17,981 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:53:18,827 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:19,982 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:21,983 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:23,983 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:24,743 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:25,984 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:26,959 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:53:27,985 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:29,985 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:30,666 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:31,469 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:53:31,469 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:53:31,986 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:33,986 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:35,987 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:36,579 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:37,988 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:39,988 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:41,989 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:42,480 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:43,989 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:45,990 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:46,469 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:53:46,469 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:53:47,490 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:47,991 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:53:52,490 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:56,959 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:53:57,960 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:53:58,798 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:53:58,798 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:53:58,799 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:53:58,799 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:53:58,994 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:53:59,994 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:01,469 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:54:01,470 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:54:01,995 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:03,682 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:03,995 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:05,996 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:07,996 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:09,592 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:09,997 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:11,998 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:13,998 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:15,503 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:15,999 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:16,469 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:54:16,470 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:54:18,000 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:20,000 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:21,413 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:22,001 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:24,001 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:26,002 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:26,960 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:54:26,961 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:28,003 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:30,003 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:31,487 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:54:31,487 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:54:32,506 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:37,507 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:40,082 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:54:40,082 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:54:40,083 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:54:40,083 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:54:41,006 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:54:42,007 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:42,610 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:44,007 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:46,008 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:46,486 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:54:46,487 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:54:48,009 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:48,516 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:50,009 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:52,010 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:54,010 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:54,426 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:54:56,011 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:54:56,960 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:54:58,012 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:00,012 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:00,335 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:01,486 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:55:01,487 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:55:02,013 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:04,014 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:06,014 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:06,247 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:08,015 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:10,015 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:11,786 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:16,503 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:55:16,504 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:55:17,523 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:21,365 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:55:21,366 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:55:21,366 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:55:21,367 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:55:22,019 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:55:22,019 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:22,707 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:24,019 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:26,020 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:26,961 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:55:28,021 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:28,619 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:30,021 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:31,502 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:55:31,503 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:55:32,022 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:34,022 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:34,536 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:36,023 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:38,024 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:40,024 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:40,444 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:42,025 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:44,025 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:46,026 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:46,361 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:46,503 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:55:46,503 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:55:48,027 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:50,027 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:52,028 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:55:52,095 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:55:56,961 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:55:57,962 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:01,519 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:56:01,520 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:56:02,681 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:56:02,682 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:56:02,682 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:56:02,683 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:56:03,023 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:03,031 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:56:04,031 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:06,032 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:08,032 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:08,756 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:10,033 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:12,034 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:14,034 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:14,671 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:16,035 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:16,518 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:56:16,519 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:56:18,036 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:20,036 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:20,584 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:22,037 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:24,037 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:26,038 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:26,496 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:26,962 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:56:28,039 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:30,039 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:31,519 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:56:31,519 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:31,520 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:56:32,040 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:36,540 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:41,540 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:43,976 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:56:43,977 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:56:43,977 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:56:43,977 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:56:44,043 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:56:46,044 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:46,519 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:56:46,519 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:56:46,728 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:48,044 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:50,045 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:52,046 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:52,460 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:56:54,046 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:56,047 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:56,962 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:56:58,047 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:56:58,381 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:00,048 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:01,519 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:57:01,520 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:57:02,049 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:04,049 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:04,298 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:06,050 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:08,051 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:10,051 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:10,222 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:12,052 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:14,052 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:15,774 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:16,530 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:57:16,530 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:57:21,550 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:25,333 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:57:25,334 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:57:25,334 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:57:25,334 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:57:26,056 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:57:26,056 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:26,710 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:26,963 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:57:28,056 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:30,057 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:31,530 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:57:31,530 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:57:32,058 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:32,678 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:34,058 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:36,059 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:38,060 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:38,561 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:40,060 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:42,061 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:44,061 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:44,485 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:46,062 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:46,530 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:57:46,530 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:57:48,063 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:50,063 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:50,417 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:52,064 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:54,065 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:56,065 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:57:56,159 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:57:56,964 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:58:01,544 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:58:01,545 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-22 20:58:01,545 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: stop_status
+2023-05-22 20:58:06,564 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:58:06,724 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-22 20:58:06,725 DEBUG   SenderThread:6501 [sender.py:send():375] send: history
+2023-05-22 20:58:06,725 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: summary_record
+2023-05-22 20:58:06,725 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:58:07,068 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:58:07,161 DEBUG   SenderThread:6501 [sender.py:send():375] send: exit
+2023-05-22 20:58:07,161 INFO    SenderThread:6501 [sender.py:send_exit():598] handling exit code: 0
+2023-05-22 20:58:07,161 INFO    SenderThread:6501 [sender.py:send_exit():600] handling runtime: 850
+2023-05-22 20:58:07,161 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:58:07,162 INFO    SenderThread:6501 [sender.py:send_exit():606] send defer
+2023-05-22 20:58:07,162 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,162 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-22 20:58:07,162 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,162 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-22 20:58:07,162 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 1
+2023-05-22 20:58:07,162 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,162 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-22 20:58:07,162 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,163 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-22 20:58:07,163 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 2
+2023-05-22 20:58:07,163 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,163 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-22 20:58:07,163 INFO    HandlerThread:6501 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-22 20:58:07,163 DEBUG   SystemMonitor:6501 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-22 20:58:07,163 DEBUG   SystemMonitor:6501 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-22 20:58:07,163 INFO    HandlerThread:6501 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-22 20:58:07,164 INFO    HandlerThread:6501 [interfaces.py:finish():202] Joined disk monitor
+2023-05-22 20:58:07,188 INFO    HandlerThread:6501 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-22 20:58:07,188 INFO    HandlerThread:6501 [interfaces.py:finish():202] Joined memory monitor
+2023-05-22 20:58:07,188 INFO    HandlerThread:6501 [interfaces.py:finish():202] Joined network monitor
+2023-05-22 20:58:07,189 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,189 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-22 20:58:07,189 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 3
+2023-05-22 20:58:07,189 DEBUG   SenderThread:6501 [sender.py:send():375] send: stats
+2023-05-22 20:58:07,189 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,189 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-22 20:58:07,189 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,190 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-22 20:58:07,190 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 4
+2023-05-22 20:58:07,190 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,190 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-22 20:58:07,190 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,190 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-22 20:58:07,190 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 5
+2023-05-22 20:58:07,190 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,190 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-22 20:58:07,190 DEBUG   SenderThread:6501 [sender.py:send():375] send: summary
+2023-05-22 20:58:07,190 INFO    SenderThread:6501 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-22 20:58:07,191 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,191 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-22 20:58:07,191 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 6
+2023-05-22 20:58:07,191 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,191 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-22 20:58:07,191 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,191 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-22 20:58:07,191 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 7
+2023-05-22 20:58:07,191 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: status_report
+2023-05-22 20:58:07,191 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:07,191 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-22 20:58:07,191 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:07,191 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-22 20:58:08,006 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 8
+2023-05-22 20:58:08,006 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:08,006 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-22 20:58:08,007 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:08,007 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-22 20:58:08,015 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 9
+2023-05-22 20:58:08,015 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:08,015 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-22 20:58:08,015 DEBUG   SenderThread:6501 [sender.py:send():375] send: artifact
+2023-05-22 20:58:08,069 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:58:08,069 INFO    Thread-12 :6501 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:58:08,161 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 20:58:08,426 INFO    wandb-upload_0:6501 [upload_job.py:push():95] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpgr_dq47s
+2023-05-22 20:58:08,429 INFO    wandb-upload_2:6501 [upload_job.py:push():95] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmp8rm4oa7o
+2023-05-22 20:58:08,449 INFO    wandb-upload_1:6501 [upload_job.py:push():95] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpbw98ry9_
+2023-05-22 20:58:08,787 INFO    SenderThread:6501 [sender.py:send_artifact():1474] sent artifact job-https___github.com_abhik-nd_NDnanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6MTE1ODY=', 'digest': 'ed36ab0e9f2d51a0d81a3c04cb3c3a34', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY5MDA=', 'latestArtifact': None}, 'version': 'latest'}
+2023-05-22 20:58:08,787 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:08,787 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-22 20:58:08,787 INFO    SenderThread:6501 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-22 20:58:09,069 INFO    SenderThread:6501 [dir_watcher.py:finish():395] scan: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files
+2023-05-22 20:58:09,069 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-metadata.json wandb-metadata.json
+2023-05-22 20:58:09,069 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/config.yaml config.yaml
+2023-05-22 20:58:09,070 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json wandb-summary.json
+2023-05-22 20:58:09,070 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log output.log
+2023-05-22 20:58:09,070 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/requirements.txt requirements.txt
+2023-05-22 20:58:09,072 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/diff.patch diff.patch
+2023-05-22 20:58:09,072 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/conda-environment.yaml conda-environment.yaml
+2023-05-22 20:58:09,077 INFO    SenderThread:6501 [dir_watcher.py:finish():409] scan save: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/code/train.py code/train.py
+2023-05-22 20:58:09,077 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 10
+2023-05-22 20:58:09,077 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 20:58:09,078 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:09,080 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-22 20:58:09,083 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:09,083 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-22 20:58:09,083 INFO    SenderThread:6501 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-22 20:58:09,128 INFO    wandb-upload_0:6501 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/config.yaml
+2023-05-22 20:58:09,162 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 20:58:09,162 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 20:58:09,180 INFO    wandb-upload_2:6501 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/wandb-summary.json
+2023-05-22 20:58:09,188 INFO    wandb-upload_3:6501 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/requirements.txt
+2023-05-22 20:58:09,240 INFO    wandb-upload_1:6501 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/output.log
+2023-05-22 20:58:09,267 INFO    wandb-upload_4:6501 [upload_job.py:push():137] Uploaded file /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/files/conda-environment.yaml
+2023-05-22 20:58:09,467 INFO    Thread-11 :6501 [sender.py:transition_state():626] send defer: 11
+2023-05-22 20:58:09,467 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:09,467 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-22 20:58:09,468 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:09,468 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-22 20:58:09,468 INFO    SenderThread:6501 [file_pusher.py:join():172] waiting for file pusher
+2023-05-22 20:58:09,468 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 12
+2023-05-22 20:58:09,468 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:09,468 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-22 20:58:09,468 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:09,468 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-22 20:58:09,550 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 13
+2023-05-22 20:58:09,550 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:09,550 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-22 20:58:09,551 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:09,551 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-22 20:58:09,551 INFO    SenderThread:6501 [sender.py:transition_state():626] send defer: 14
+2023-05-22 20:58:09,551 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: defer
+2023-05-22 20:58:09,551 INFO    HandlerThread:6501 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-22 20:58:09,551 DEBUG   SenderThread:6501 [sender.py:send():375] send: final
+2023-05-22 20:58:09,551 DEBUG   SenderThread:6501 [sender.py:send():375] send: footer
+2023-05-22 20:58:09,551 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: defer
+2023-05-22 20:58:09,551 INFO    SenderThread:6501 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-22 20:58:09,552 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 20:58:09,552 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 20:58:09,552 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-22 20:58:09,553 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: poll_exit
+2023-05-22 20:58:09,553 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: server_info
+2023-05-22 20:58:09,553 DEBUG   SenderThread:6501 [sender.py:send_request():402] send_request: server_info
+2023-05-22 20:58:09,555 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-22 20:58:09,555 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-22 20:58:09,568 INFO    MainThread:6501 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-22 20:58:09,568 INFO    MainThread:6501 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-22 20:58:09,568 INFO    MainThread:6501 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-05-22 20:58:09,568 DEBUG   HandlerThread:6501 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-22 20:58:09,568 INFO    HandlerThread:6501 [handler.py:finish():845] shutting down handler
+2023-05-22 20:58:10,553 INFO    WriterThread:6501 [datastore.py:close():298] close: /home/ubuntu/abhi_workspace/NDnanoGPT/wandb/run-20230522_204356-t6ramng5/run-t6ramng5.wandb
+2023-05-22 20:58:10,568 INFO    SenderThread:6501 [sender.py:finish():1550] shutting down sender
+2023-05-22 20:58:10,568 INFO    SenderThread:6501 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-22 20:58:10,568 INFO    SenderThread:6501 [file_pusher.py:join():172] waiting for file pusher

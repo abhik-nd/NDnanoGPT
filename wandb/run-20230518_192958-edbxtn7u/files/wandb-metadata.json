@@ -1,0 +1,128 @@
+{
+    "os": "Linux-5.4.0-1066-aws-x86_64-with-glibc2.27",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-05-18T19:29:59.247878",
+    "startedAt": "2023-05-18T19:29:58.912843",
+    "docker": null,
+    "cuda": "11.0.228",
+    "args": [
+        "config/train_shakespeare_char.py",
+        "--dtype=float16"
+    ],
+    "state": "running",
+    "program": "/home/ubuntu/abhi_workspace/NDnanoGPT/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/abhik-nd/NDnanoGPT.git",
+        "commit": "7fe4a099ad2a4654f96a51c0736ecf347149c34c"
+    },
+    "email": "michael.laielli@netradyne.com",
+    "root": "/home/ubuntu/abhi_workspace/NDnanoGPT",
+    "host": "ip-10-200-10-3",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/gpt/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3108.2267500000007,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3104.164,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3087.251,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3104.087,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.488,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3100.731,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3111.546,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3105.145,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3102.908,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3136.849,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3100.06,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3109.185,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3099.345,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3114.622,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3105.298,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3101.951,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3137.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 125.96025466918945,
+        "used": 107.00549697875977
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 62.03021240234375
+    }
+}

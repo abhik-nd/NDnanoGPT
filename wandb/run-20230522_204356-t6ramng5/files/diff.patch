@@ -1,0 +1,278 @@
+diff --git a/config/train_shakespeare_char.py b/config/train_shakespeare_char.py
+index 41c81df..13063a6 100644
+--- a/config/train_shakespeare_char.py
++++ b/config/train_shakespeare_char.py
+@@ -1,5 +1,7 @@
+ # train a miniature character-level shakespeare model
+ # good for debugging and playing on macbooks and such
++# python train.py config/train_shakespeare_char.py --dtype=float16
++# python sample.py --out_dir=out-shakespeare-char --dtype=float16 
+ 
+ out_dir = 'out-shakespeare-char'
+ eval_interval = 250 # keep frequent because we'll overfit
+@@ -9,7 +11,7 @@ log_interval = 10 # don't print too too often
+ # we expect to overfit on this small dataset, so only save when val improves
+ always_save_checkpoint = False
+ 
+-wandb_log = False # override via command line if you like
++wandb_log = True # override via command line if you like
+ wandb_project = 'shakespeare-char'
+ wandb_run_name = 'mini-gpt'
+ 
+diff --git a/data/openwebtext/prepare.py b/data/openwebtext/prepare.py
+deleted file mode 100644
+index 8dc30e1..0000000
+--- a/data/openwebtext/prepare.py
++++ /dev/null
+@@ -1,74 +0,0 @@
+-# saves the openwebtext dataset to a binary file for training. following was helpful:
+-# https://github.com/HazyResearch/flash-attention/blob/main/training/src/datamodules/language_modeling_hf.py
+-
+-import os
+-from tqdm import tqdm
+-import numpy as np
+-import tiktoken
+-from datasets import load_dataset # huggingface datasets
+-
+-# number of workers in .map() call
+-# good number to use is ~order number of cpu cores // 2
+-num_proc = 8
+-
+-# takes 54GB in huggingface .cache dir, about 8M documents (8,013,769)
+-dataset = load_dataset("openwebtext")
+-
+-# owt by default only contains the 'train' split, so create a test split
+-split_dataset = dataset["train"].train_test_split(test_size=0.0005, seed=2357, shuffle=True)
+-split_dataset['val'] = split_dataset.pop('test') # rename the test split to val
+-
+-# this results in:
+-# >>> split_dataset
+-# DatasetDict({
+-#     train: Dataset({
+-#         features: ['text'],
+-#         num_rows: 8009762
+-#     })
+-#     val: Dataset({
+-#         features: ['text'],
+-#         num_rows: 4007
+-#     })
+-# })
+-
+-# we now want to tokenize the dataset. first define the encoding function (gpt2 bpe)
+-enc = tiktoken.get_encoding("gpt2")
+-def process(example):
+-    ids = enc.encode_ordinary(example['text']) # encode_ordinary ignores any special tokens
+-    ids.append(enc.eot_token) # add the end of text token, e.g. 50256 for gpt2 bpe
+-    # note: I think eot should be prepended not appended... hmm. it's called "eot" though...
+-    out = {'ids': ids, 'len': len(ids)}
+-    return out
+-
+-# tokenize the dataset
+-tokenized = split_dataset.map(
+-    process,
+-    remove_columns=['text'],
+-    desc="tokenizing the splits",
+-    num_proc=num_proc,
+-)
+-
+-# concatenate all the ids in each dataset into one large file we can use for training
+-for split, dset in tokenized.items():
+-    arr_len = np.sum(dset['len'])
+-    filename = os.path.join(os.path.dirname(__file__), f'{split}.bin')
+-    dtype = np.uint16 # (can do since enc.max_token_value == 50256 is < 2**16)
+-    arr = np.memmap(filename, dtype=dtype, mode='w+', shape=(arr_len,))
+-    total_batches = 1024
+-
+-    idx = 0
+-    for batch_idx in tqdm(range(total_batches), desc=f'writing {filename}'):
+-        # Batch together samples for faster write
+-        batch = dset.shard(num_shards=total_batches, index=batch_idx, contiguous=True).with_format('numpy')
+-        arr_batch = np.concatenate(batch['ids'])
+-        # Write into mmap
+-        arr[idx : idx + len(arr_batch)] = arr_batch
+-        idx += len(arr_batch)
+-    arr.flush()
+-
+-# train.bin is ~17GB, val.bin ~8.5MB
+-# train has ~9B tokens (9,035,582,198)
+-# val has ~4M tokens (4,434,897)
+-
+-# to read the bin files later, e.g. with numpy:
+-# m = np.memmap('train.bin', dtype=np.uint16, mode='r')
+diff --git a/data/openwebtext/readme.md b/data/openwebtext/readme.md
+deleted file mode 100644
+index 95eb1bf..0000000
+--- a/data/openwebtext/readme.md
++++ /dev/null
+@@ -1,15 +0,0 @@
+-
+-## openwebtext dataset
+-
+-after running `prepare.py` (preprocess) we get:
+-
+-- train.bin is ~17GB, val.bin ~8.5MB
+-- train has ~9B tokens (9,035,582,198)
+-- val has ~4M tokens (4,434,897)
+-
+-this came from 8,013,769 documents in total.
+-
+-references:
+-
+-- OpenAI's WebText dataset is discussed in [GPT-2 paper](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+-- [OpenWebText](https://skylion007.github.io/OpenWebTextCorpus/) dataset
+diff --git a/data/shakespeare/prepare.py b/data/shakespeare/prepare.py
+deleted file mode 100644
+index 71c88da..0000000
+--- a/data/shakespeare/prepare.py
++++ /dev/null
+@@ -1,33 +0,0 @@
+-import os
+-import requests
+-import tiktoken
+-import numpy as np
+-
+-# download the tiny shakespeare dataset
+-input_file_path = os.path.join(os.path.dirname(__file__), 'input.txt')
+-if not os.path.exists(input_file_path):
+-    data_url = 'https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt'
+-    with open(input_file_path, 'w') as f:
+-        f.write(requests.get(data_url).text)
+-
+-with open(input_file_path, 'r') as f:
+-    data = f.read()
+-n = len(data)
+-train_data = data[:int(n*0.9)]
+-val_data = data[int(n*0.9):]
+-
+-# encode with tiktoken gpt2 bpe
+-enc = tiktoken.get_encoding("gpt2")
+-train_ids = enc.encode_ordinary(train_data)
+-val_ids = enc.encode_ordinary(val_data)
+-print(f"train has {len(train_ids):,} tokens")
+-print(f"val has {len(val_ids):,} tokens")
+-
+-# export to bin files
+-train_ids = np.array(train_ids, dtype=np.uint16)
+-val_ids = np.array(val_ids, dtype=np.uint16)
+-train_ids.tofile(os.path.join(os.path.dirname(__file__), 'train.bin'))
+-val_ids.tofile(os.path.join(os.path.dirname(__file__), 'val.bin'))
+-
+-# train.bin has 301,966 tokens
+-# val.bin has 36,059 tokens
+diff --git a/data/shakespeare/readme.md b/data/shakespeare/readme.md
+deleted file mode 100644
+index 1e6c457..0000000
+--- a/data/shakespeare/readme.md
++++ /dev/null
+@@ -1,9 +0,0 @@
+-
+-# tiny shakespeare
+-
+-Tiny shakespeare, of the good old char-rnn fame :)
+-
+-After running `prepare.py`:
+-
+-- train.bin has 301,966 tokens
+-- val.bin has 36,059 tokens
+diff --git a/data/shakespeare_char/prepare.py b/data/shakespeare_char/prepare.py
+deleted file mode 100644
+index 9fd1621..0000000
+--- a/data/shakespeare_char/prepare.py
++++ /dev/null
+@@ -1,68 +0,0 @@
+-"""
+-Prepare the Shakespeare dataset for character-level language modeling.
+-So instead of encoding with GPT-2 BPE tokens, we just map characters to ints.
+-Will save train.bin, val.bin containing the ids, and meta.pkl containing the
+-encoder and decoder and some other related info.
+-"""
+-import os
+-import pickle
+-import requests
+-import numpy as np
+-
+-# download the tiny shakespeare dataset
+-input_file_path = os.path.join(os.path.dirname(__file__), 'input.txt')
+-if not os.path.exists(input_file_path):
+-    data_url = 'https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt'
+-    with open(input_file_path, 'w') as f:
+-        f.write(requests.get(data_url).text)
+-
+-with open(input_file_path, 'r') as f:
+-    data = f.read()
+-print(f"length of dataset in characters: {len(data):,}")
+-
+-# get all the unique characters that occur in this text
+-chars = sorted(list(set(data)))
+-vocab_size = len(chars)
+-print("all the unique characters:", ''.join(chars))
+-print(f"vocab size: {vocab_size:,}")
+-
+-# create a mapping from characters to integers
+-stoi = { ch:i for i,ch in enumerate(chars) }
+-itos = { i:ch for i,ch in enumerate(chars) }
+-def encode(s):
+-    return [stoi[c] for c in s] # encoder: take a string, output a list of integers
+-def decode(l):
+-    return ''.join([itos[i] for i in l]) # decoder: take a list of integers, output a string
+-
+-# create the train and test splits
+-n = len(data)
+-train_data = data[:int(n*0.9)]
+-val_data = data[int(n*0.9):]
+-
+-# encode both to integers
+-train_ids = encode(train_data)
+-val_ids = encode(val_data)
+-print(f"train has {len(train_ids):,} tokens")
+-print(f"val has {len(val_ids):,} tokens")
+-
+-# export to bin files
+-train_ids = np.array(train_ids, dtype=np.uint16)
+-val_ids = np.array(val_ids, dtype=np.uint16)
+-train_ids.tofile(os.path.join(os.path.dirname(__file__), 'train.bin'))
+-val_ids.tofile(os.path.join(os.path.dirname(__file__), 'val.bin'))
+-
+-# save the meta information as well, to help us encode/decode later
+-meta = {
+-    'vocab_size': vocab_size,
+-    'itos': itos,
+-    'stoi': stoi,
+-}
+-with open(os.path.join(os.path.dirname(__file__), 'meta.pkl'), 'wb') as f:
+-    pickle.dump(meta, f)
+-
+-# length of dataset in characters:  1115394
+-# all the unique characters:
+-#  !$&',-.3:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+-# vocab size: 65
+-# train has 1003854 tokens
+-# val has 111540 tokens
+diff --git a/data/shakespeare_char/readme.md b/data/shakespeare_char/readme.md
+deleted file mode 100644
+index d597b79..0000000
+--- a/data/shakespeare_char/readme.md
++++ /dev/null
+@@ -1,9 +0,0 @@
+-
+-# tiny shakespeare, character-level
+-
+-Tiny shakespeare, of the good old char-rnn fame :) Treated on character-level.
+-
+-After running `prepare.py`:
+-
+-- train.bin has 1,003,854 tokens
+-- val.bin has 111,540 tokens
+diff --git a/sample.py b/sample.py
+index 670759b..483cf9b 100644
+--- a/sample.py
++++ b/sample.py
+@@ -11,7 +11,7 @@ from model import GPTConfig, GPT
+ # -----------------------------------------------------------------------------
+ init_from = 'resume' # either 'resume' (from an out_dir) or a gpt2 variant (e.g. 'gpt2-xl')
+ out_dir = 'out' # ignored if init_from is not 'resume'
+-start = "\n" # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE:prompt.txt"
++start = "\n"#"FILE:data/nd_small/prompt.txt" #"{"#"\n" # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE:prompt.txt"
+ num_samples = 10 # number of samples to draw
+ max_new_tokens = 500 # number of tokens generated in each sample
+ temperature = 0.8 # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions

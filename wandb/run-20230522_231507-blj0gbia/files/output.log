@@ -1,0 +1,41 @@
+
+step 0: train loss 3.2408, val loss 3.2420
+[2023-05-22 23:16:21,940] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:22,519] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:23,218] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:23,500] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:23,881] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:24,163] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:24,546] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:24,828] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:25,344] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:25,626] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:26,008] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+[2023-05-22 23:16:26,291] torch._inductor.utils: [WARNING] using triton random, expect difference from eager
+iter 0: loss 3.2151, time 74374.15ms, mfu -100.00%
+iter 10: loss 2.6911, time 614.10ms, mfu 4.12%
+iter 20: loss 2.3216, time 612.38ms, mfu 4.12%
+iter 30: loss 2.1016, time 625.14ms, mfu 4.11%
+iter 40: loss 2.0538, time 623.78ms, mfu 4.11%
+iter 50: loss 2.0166, time 619.25ms, mfu 4.10%
+iter 60: loss 2.0316, time 614.74ms, mfu 4.11%
+iter 70: loss 1.9851, time 618.10ms, mfu 4.10%
+iter 80: loss 1.9804, time 620.77ms, mfu 4.10%
+iter 90: loss 2.0085, time 618.93ms, mfu 4.10%
+iter 100: loss 2.0099, time 626.19ms, mfu 4.09%
+iter 110: loss 1.9841, time 628.57ms, mfu 4.09%
+iter 120: loss 1.9843, time 626.81ms, mfu 4.08%
+iter 130: loss 1.9882, time 635.82ms, mfu 4.07%
+iter 140: loss 1.9784, time 632.97ms, mfu 4.06%
+iter 150: loss 1.9443, time 633.37ms, mfu 4.06%
+iter 160: loss 1.9289, time 638.05ms, mfu 4.05%
+iter 170: loss 1.9855, time 641.06ms, mfu 4.04%
+iter 180: loss 1.9372, time 639.50ms, mfu 4.03%
+iter 190: loss 1.9399, time 639.95ms, mfu 4.02%
+iter 200: loss 1.9347, time 644.33ms, mfu 4.01%
+iter 210: loss 1.9635, time 632.78ms, mfu 4.01%
+iter 220: loss 1.9495, time 633.54ms, mfu 4.01%
+iter 230: loss 1.9507, time 633.14ms, mfu 4.01%
+iter 240: loss 1.9491, time 632.74ms, mfu 4.01%
+step 250: train loss 1.9340, val loss 1.9360
+saving checkpoint to out-nd-accel
